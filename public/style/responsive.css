@@ -1,0 +1,391 @@
+/*-------------------------------------RESPONSIVO------------------*/
+html {
+  font-size: 50%;
+}
+
+@media screen and (max-width:964px) {
+  .imagemfrontal {
+
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .image-front {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    order: -1;
+  }
+
+  .imagemfrontal {
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: end;
+    justify-items: center
+  }
+
+  .info-right {
+    grid-column: 3;
+    /* Posiciona a Div 1 na primeira coluna */
+
+  }
+
+  .left {
+    grid-column: 1;
+    /* Posiciona a Div 3 na segunda coluna */
+
+  }
+
+}
+
+@media screen and (max-width: 845px) {
+  .image-front {
+    display: grid;
+    grid-column: 2;
+    order: -1;
+  }
+
+  .imagemfrontal {
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: end;
+    justify-items: center
+  }
+
+  .info-right {
+    grid-column: 3;
+    /* Posiciona a Div 1 na primeira coluna */
+
+  }
+
+  .left {
+    grid-column: 1;
+    /* Posiciona a Div 3 na segunda coluna */
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
+  }
+
+  .imagemfrontal {
+    width: 300px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-right,
+  .left {
+    display: grid;
+    justify-content: center;
+    grid-column: 1;
+    /* Posiciona a Div 1 na primeira coluna */
+
+  }
+
+  .left {
+    grid-column: 1;
+    /* Posiciona a Div 3 na segunda coluna */
+
+  }
+
+  .projectsInitial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .social-midia,
+  h1,
+  p {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutMe img,
+  h1 {
+    margin-top: 50px;
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutMeOne {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .techs {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  /*PARTE RESPONSIVA BOTAO HEADER*/
+  .top {
+    display: none;
+    background-color: transparent;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: #ffff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .menu-section {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 100%;
+    background-color: #7159c1;
+    z-index: 9999;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-section.on .centerPage {
+    margin: 0px;
+  }
+
+  .menu-section.on .top {
+    display: block;
+    height: auto;
+    width: 50%;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(7px, -9px);
+  }
+
+  .menu-section.on .top a {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on .top a {
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: block;
+  }
+
+  .menu-section.on a {
+    color: #fff;
+    opacity: 1;
+  }
+
+  .menu-section.on .top a:hover::before {
+    left: 111px;
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .image-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
+  }
+
+  .imagemfrontal {
+    width: 300px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-right,
+  .left {
+    display: grid;
+    justify-content: center;
+    grid-column: 1;
+    /* Posiciona a Div 1 na primeira coluna */
+
+  }
+
+  .left {
+    grid-column: 1;
+    /* Posiciona a Div 3 na segunda coluna */
+
+  }
+
+  .experienceWidth {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ExperienceDesc {
+    display: none;
+  }
+
+  .projectsInitial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .services svg {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .image-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
+  }
+
+  .imagemfrontal {
+    width: 300px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-right,
+  .left {
+    display: grid;
+    justify-content: center;
+    grid-column: 1;
+    /* Posiciona a Div 1 na primeira coluna */
+
+  }
+
+  .left {
+    grid-column: 1;
+    /* Posiciona a Div 3 na segunda coluna */
+
+  }
+
+  .social-midia,
+  h1,
+  p {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutMe img,
+  h1 {
+    margin-top: 50px;
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutMeOne {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .techs {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    justify-items: center;
+  }
+
+
+
+}

@@ -1,0 +1,89 @@
+/*-------------------------TEMA LIGHT---------------------------------------------------*/
+.darkMode {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+body.dark {
+    background: var(--roxo-dark-transparencia);
+}
+
+.dark .top {
+    background: var(--roxo-dark-transparencia);
+
+}
+
+.dark .top a {
+    color: var(--roxo-escuro);
+    opacity: 1;
+}
+
+.dark .top a::before {
+    background: rgba(74, 66, 88, 0.432);
+}
+
+.dark .left .active {
+    background: rgba(123, 74, 226, 0.1);
+    color: var(--preto);
+}
+
+.dark .left h1 {
+    color: var(--preto);
+}
+
+.dark .left .programm {
+    color: var(--preto);
+    opacity: 1;
+}
+
+.dark .info-right .Cv {
+    color: var(--preto);
+}
+
+.dark .info-right .active {
+    background: rgba(123, 74, 226, 0.1);
+    color: var(--preto);
+}
+
+.dark .ExperienceSection p {
+    color: var(--preto);
+}
+
+.dark .text {
+    color: var(--preto);
+}
+
+.dark form input,
+textarea {
+    background-color: rgba(123, 74, 226, 0.1);
+    resize: none;
+}
+
+.dark input:focus,
+textarea:focus {
+    border: 1px solid var(--roxo-padrao);
+}
+
+.dark .textarea {
+    background-color: var(--roxo-dark-transparencia);
+}
+
+.dark .one,
+.dark .two,
+.dark .three {
+    background-color: black;
+}
+
+.dark .menu-section.on {
+    background-color: #F7F3FF;
+}
+
+.dark .menu-section.on .top {
+    background-color: transparent;
+}
+
+.dark .menu-toggle.on {
+    background-color: rgb(146, 85, 85);
+}
