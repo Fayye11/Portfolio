@@ -192,7 +192,7 @@ html {
   }
 
   .menu-section {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 15px;
   }
@@ -202,7 +202,6 @@ html {
     top: 0;
     left: 0;
     right: 0;
-
     height: 100vh;
     background-color: #7159c1;
     z-index: 9999;
