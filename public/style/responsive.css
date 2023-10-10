@@ -151,6 +151,19 @@ html {
     width: 50%;
     justify-items: center;
   }
+  .contacts form,
+  input,
+  textarea {
+    display: flex;
+    max-width: 100vw;
+    width: 100%;
+    border-radius: 10px;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
 }
 
 @media screen and (max-width: 550px) {
@@ -190,7 +203,7 @@ html {
     left: 0;
     right: 0;
 
-    height: 100%;
+    height: 100vh;
     background-color: #7159c1;
     z-index: 9999;
     margin: auto;
@@ -249,6 +262,7 @@ html {
     left: 111px;
     width: 24%;
   }
+
 }
 
 @media screen and (max-width: 545px) {
