@@ -6,6 +6,11 @@
     margin-right: 50px;
 }
 
+body.light-theme {
+    background-color: white;
+    color: black;
+  }
+
 body.dark {
     background: var(--roxo-dark-transparencia);
 }
@@ -14,7 +19,9 @@ body.dark {
     background: var(--roxo-dark-transparencia);
 
 }
-
+.dark .darw {
+    color: black;
+}
 .dark .top a {
     color: var(--roxo-escuro);
     opacity: 1;
@@ -88,3 +95,4 @@ textarea:focus {
     background-color: rgb(146, 85, 85);
 }
 
+/* Estilos para o tema claro (light mode) */
