@@ -21,3 +21,7 @@ sr.reveal('.area-4', {
 })
 
 
+const darkmode = document.querySelector('.darkMode')
+const minhaDiv = document.querySelector('.darw')
+const textodark = "Dark mode"
+
