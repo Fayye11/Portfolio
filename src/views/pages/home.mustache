@@ -2,7 +2,7 @@
     <div id="root" class="root animation">
         <div class="PageCentral">
 
-            {{>partials/headerSec}}
+
             <section class="ExperienceSection blackPage centerPage  linePage" id="ExperienceSection">
                 <div class="experienceWidth flex-center" style="gap: 32px;">
                     <div class="projectsCard hover flex-center">
@@ -83,11 +83,11 @@
                     </div>
                 </div>
             </section>
-            <section class="aboutMe centerPage area-1" id="aboutMe">
-                <div class="aboutMeTwo flex-center">
+            <section class="aboutMe centerPage area-1">
+                <div class="aboutMeTwo flex-center" >
                     <img src="/images/gato.jpg" alt="">
                 </div>
-                <div class="aboutMeOne">
+                <div class="aboutMeOne" id="aboutMe">
                     <p class="active text">Sobre mim</p>
                     <h1 class="h1 text">Cauã Wriel <br> Santos Thomé</h1>
                     <p class="text">Desenvolvedor Full Stack com experiência de 1 ano em JavaScript, TypeScript e
@@ -99,24 +99,21 @@
                         adquirir um vasto conhecimento sobre as melhores práticas de desenvolvimento.</p>
                 </div>
             </section>
-           <section class="projects centerPage area-2" id="projects">
+            <section class="projects centerPage area-2" id="projects">
                 <div class="titleProjects flex-center">
-                    <h1 class="h1 text">PROJETOS</h1>
+                    <h1 class="h1 text">Projetos</h1>
                     <p class="text active">confira alguns dos meus projetos</p>
                 </div>
-                <div class="projectsInitial">
-                    <div class="project 1 hover">
+                <div class="projectsInitial cards">
+                    <div class="project project1 hover">
                         <div class="content">
                             <a href="https://canilts-node.vercel.app" target="_blank">
                             <div class="info">
                                 <h3>Canil</h3>
-                                <p>                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis modi unde
-                                aspernatur qui, repellendus eveniet quod temporibus sit, quam neque porro quo ex eius
-                                cumque consequuntur eum quibusdam error?
-                                </p>
+                                <p>Projeto desenvolvido como foco para totalmente em NodeJS e API</p>
                             </div>
                             <div class="tags-and-banner">
-                                <img src="/images/canil.png" alt="">
+                               
                                 <div class="tagsInitial">
                                     <div class="tags">Html</div>
                                     <div class="tags">Css</div>
@@ -125,6 +122,7 @@
                                     <div class="tags">MongoDb</div>
                                     <div class="tags">Javascript</div>
                                 </div>
+                                <img src="/images/canil.png" alt="">
                             </div>
 
                         </div>
@@ -147,9 +145,9 @@
                     </div>
                 </div>
             </section>
-            <section id="skills" class="centerPage skillsHab area-3">
+            <section id="skills" class="centerPage skillsHab area-3" id="">
                 <div class="titleProjects flex-center">
-                    <h1 class="h1 text">habilidades</h1>
+                    <h1 class="h1 text">Habilidades</h1>
                     <p class="text active">Habilidades conquistadas</p>
                     <div class="techs">
                         <img class="techImage" src="/images/gitbass.svg" alt="">
@@ -161,13 +159,13 @@
                         <img class="techImage 2" src="/images/MySQL.svg" alt="">
                         <img class="techImage 2" src="/images/PostGree.svg" alt="">
                         <img class="techImage 3" src="/images/Nodejs.svg" alt="">
-                        <img class="techImage 3" src="/images/mongoDb.svg" alt="">
+                        <img class="techImage 3" src="images/mongoDb.svg" alt="">
                     </div>
             </section>
-            <section class="centerPage area-4">
+            <section class="centerPage area-4" id="services">
                 <div class="titleProjects flex-center">
-                    <h1 class="h1 text">SERVIÇOS</h1>
-                    <p class="text active">Um pouco dos serviços que tenho a oferecer!</p>
+                    <h1 class="h1 text">Serviços</h1>
+                    <p class="text active">Um pouco que tenho a oferecer!</p>
                 </div>
                 <div class="services">
                     <div class="Api">
@@ -219,13 +217,12 @@
                         <input type="text" name="name" placeholder="Nome" class="w-full max-w" autocomplete="off">
                         <input type="email" class="w-full max-w" name="email" placeholder="E-mail" autocomplete="off">
                         <textarea name="message" id="resize" class="textarea w-full max-w" maxlength="500"
-                            autocomplete="off"></textarea>
+                            autocomplete="off" placeholder="Digite sua Mensagem"></textarea>
 
                         <input type="hidden" name="accessKey" value="9438dfbf-dead-4452-b78c-7ade4179d312">
                         <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
-                        <a href="">
                         <button class="box-shadow active py-3 flex-center">
-                           <p class="text">Enviar Mensagem</p>
+                            <p class="text">Enviar Mensagem</p>
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
                                 aria-hidden="true" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -234,7 +231,6 @@
                             </svg>
 
                         </button>
-                        </a>
                     </form>
                 </div>
             </section>
