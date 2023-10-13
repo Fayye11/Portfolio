@@ -6,11 +6,6 @@
     margin-right: 50px;
 }
 
-body.light-theme {
-    background-color: white;
-    color: black;
-  }
-
 body.dark {
     background: var(--roxo-dark-transparencia);
 }
@@ -30,11 +25,20 @@ body.dark {
 .dark .top a::before {
     background: rgba(74, 66, 88, 0.432);
 }
-
-.dark .left .activeText {
+.dark .left .active {
     background: rgba(123, 74, 226, 0.1);
     color: var(--preto);
 }
+
+
+
+.dark .box-shadow {
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-shadow: 0px 0px 68px 7px rgba(0, 0, 0, 0.445);
+    --tw-shadow-colored: 0px 0px 68px 7px var(--tw-shadow-color);
+    cursor: pointer;
+}
+
 
 .dark .left h1 {
     color: var(--preto);
@@ -49,7 +53,17 @@ body.dark {
     color: var(--preto);
 }
 
-.dark .info-right .active {
+.dark .info p {
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+.dark .info h3 {
+
+    color: rgb(0, 0, 0);
+}
+
+
+.dark .info-right .activeText {
     background: rgba(123, 74, 226, 0.1);
     color: var(--preto);
 }
@@ -89,10 +103,6 @@ textarea:focus {
 
 .dark .menu-section.on .top {
     background-color: transparent;
-}
-
-.dark .menu-toggle.on {
-    background-color: rgb(146, 85, 85);
 }
 
 /* Estilos para o tema claro (light mode) */
