@@ -166,8 +166,8 @@ html {
 }
 }
 
-@media screen and (max-width: 550px) {
-
+@media screen and (max-width: 767px) {
+  
   /*PARTE RESPONSIVA BOTAO HEADER*/
   .top {
     display: none;
@@ -246,10 +246,11 @@ html {
   }
 
   .menu-section.on .top a {
-    transition-duration: 0.5s;
     font-size: 3rem;
-    line-height: 4rem;
+    line-height: 9rem;
     display: block;
+    border-bottom: 1px solid #614f99;
+    border-radius: 10px;
   }
 
   .menu-section.on a {
@@ -258,8 +259,7 @@ html {
   }
 
   .menu-section.on .top a:hover::before {
-    left: 111px;
-    width: 24%;
+    display: none;
   }
 
 }
@@ -271,7 +271,6 @@ html {
     justify-content: center;
     order: -1;
   }
-
   .imagemfrontal {
     width: 300px;
   }

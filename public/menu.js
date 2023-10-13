@@ -4,7 +4,6 @@ const menuSection = document.querySelector('.menu-section')
 const menuToggle = document.querySelector('.menu-toggle')
 
 menuToggle.addEventListener("click", ()=> {
-    document.body.style.overflow = show ? "hidden" : "initial"
 
 
     menuSection.classList.toggle("on", show)
@@ -38,3 +37,20 @@ document.querySelectorAll('a.scroll-link').forEach(anchor => {
       }
     });
   });
+
+  const menu = document.querySelector('.menu-toggle')
+  const menuItem = document.querySelector('.menu-section')
+  const scrollink = document.querySelector('.grid-2')
+  const body = document.body;
+  function clickfunction() {
+    menu.classList.toggle('on')
+  }
+  menu.addEventListener('click', clickfunction)
+
+  scrollink.addEventListener('click', overflow)
+
+  function overflow() {
+    body.style.overflow = "none"
+  }
+
+  
